@@ -1,0 +1,34 @@
+    /* global.css or within a @layer utilities block */
+    .scrollbar-none {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer, Edge */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, newer Edge */
+}
+
+.hide-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Measure.css */
+.w-160 { width: 640px; }
+.w-200 { width: 800px; }
+.w-170 { width: 680px; }
+.w-140 { width: 560px; }
+.w-86 { width: 344px; }
+.w-85 { width: 340px; }
+.w-80 { width: 320px; }
+.h-65 { height: 260px; }
+.h-71 { height: 284px; }
+.h-90 { height: 360px; }
+.h-120 { height: 480px; }
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet"> */

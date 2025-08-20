@@ -1,0 +1,20 @@
+@keyframes carousel {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(-50%); }  /* Move left */
+  60% { transform: translateX(-50%); }  /* Hold */
+  100% { transform: translateX(0); }    /* Move back right */
+}
+
+.animate-carousel {
+  animation: carousel 50s linear infinite alternate;
+}
+
+.paused {
+  animation-play-state: paused !important;
+}
+
+
+
+.group:hover .animate-carousel {
+  animation-play-state: paused;
+}
