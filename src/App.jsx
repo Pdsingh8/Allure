@@ -1,7 +1,6 @@
 import Nav from "./Components/Nav.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import "./App.css";
-
 import Slideshow from "./Components/Slideshow.jsx";
 import BestSelling from "./Components/BestSelling.jsx";
 import NewLook from "./Components/NewLook.jsx";

@@ -21,63 +21,63 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
       title: "Elegant Check Blazer",
       store: "Pollheim",
       price: "From $1,062.00",
-      image: "src/assets/shirtimg-1.jpg",
+      image: "/assets/shirtimg-1.jpg",
     },
     {
       id: 2,
       title: "Casual blazer & draw pant",
       store: "My Store",
       price: "From $450.99",
-      image: "src/assets/cardimg-1.webp",
+      image: "/assets/cardimg-1.webp",
     },
     {
       id: 3,
       title: "Leather classic men's shoes",
       store: "My Store",
       price: "$149.99",
-      image: "src/assets/shoeimg-1.webp",
+      image: "/assets/shoeimg-1.webp",
     },
     {
       id: 4,
       title: "Women's belt-lace in black",
       store: "My Store",
       price: "$199.99",
-      image: "src/assets/beltimg-1.webp",
+      image: "/assets/beltimg-1.webp",
     },
     {
       id: 5,
       title: "Casual draw pant & casual blazer",
       store: "My Store",
       price: "$79.99",
-      image: "src/assets/pantimg-1.webp",
+      image: "/assets/pantimg-1.webp",
     },
     {
       id: 6,
       title: "Wool Winter Coat",
       store: "My Store",
       price: "$249.00",
-      image: "src/assets/coatimg-1.jpg",
+      image: "/assets/coatimg-1.jpg",
     },
     {
       id: 7,
       title: "Formal Tie Set",
       store: "My Store",
       price: "$59.00",
-      image: "src/assets/tieimg-1.jpg",
+      image: "/assets/tieimg-1.jpg",
     },
     {
       id: 8,
       title: "Summer Casual Shoes",
       store: "My Store",
       price: "$89.00",
-      image: "src/assets/sneakerimg-1.jpg",
+      image: "/assets/sneakerimg-1.jpg",
     },
     {
       id: 9,
       title: "Luxury Leather Bag",
       store: "My Store",
       price: "$299.00",
-      image: "src/assets/bagimg-1.jpg",
+      image: "/assets/bagimg-1.jpg",
     },
   ];
 
@@ -148,25 +148,25 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   return (
     // main-div
-    <div className=" flex flex-col md:flex-row justify-around  mt-5 w-full h-[160vh] md:h-[160vh] overflow-hidden"  onWheel={handleWheel}
+    <div className=" flex flex-col md:flex-row justify-around  mt-5 w-full h-[160vh] md:h-[162vh] overflow-hidden"  onWheel={handleWheel}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove} >
       {/* first-div */}
       <div className="hidden sm:block justify-evenly ml-7 items-center ">
-        <img src="src/assets/safarimain.jpg" alt="" className="w-150 h-200 " />
+        <img src="/assets/safarimain.jpg" alt="" className="w-160 h-250 object-cover " />
       </div>
       {/* second-div */}
       {/* scroller-div */}
       <div className="hidden sm:block overflow-y-auto scrollbar-none mr-3 gap-3 md:flex flex-col ml-3 items-center inset-0 w-120" ref={scrollerRef}>
-        <img src="src/assets/s1.jpg" alt="" className="h-140 w-120 mb-2 " />
-        <img src="src/assets/s2.jpg" alt="" className="h-140 w-120 mb-2 " />
-        <img src="src/assets/s3.jpg" alt="" className="h-140 w-120 mb-2" />
-        <img src="src/assets/s4.jpg" alt="" className="h-140 w-120 mb-2" />
-        <img src="src/assets/s5.jpg" alt="" className="h-140 w-120 mb-2" />
-        <img src="src/assets/s6.jpg" alt="" className="h-140 w-120 mb-2 " />
+        <img src="/assets/s1.jpg" alt="" className="h-140 w-120 mb-2 " />
+        <img src="/assets/s2.jpg" alt="" className="h-140 w-120 mb-2 " />
+        <img src="/assets/s3.jpg" alt="" className="h-140 w-120 mb-2" />
+        <img src="/assets/s4.jpg" alt="" className="h-140 w-120 mb-2" />
+        <img src="/assets/s5.jpg" alt="" className="h-140 w-120 mb-2" />
+        <img src="/assets/s6.jpg" alt="" className="h-140 w-120 mb-2 " />
         
-        <img src="src/assets/s7.jpg" alt="" className="h-140 w-120 mb-2 " />
-        <img src="src/assets/s8.jpg" alt="" className="h-140 w-120 mb-2" />
+        <img src="/assets/s7.jpg" alt="" className="h-140 w-120 mb-2 " />
+        <img src="/assets/s8.jpg" alt="" className="h-140 w-120 mb-2" />
       </div>
        <Mobilecarousel/>
       {/* description */}
@@ -216,16 +216,16 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
           </p>
           <button className="mr-2 underline">
             <img
-              src="src/assets/color1.jpg"
+              src="/assets/color1.jpg"
               alt=""
               className="w-12 h-12 underline"
             />
           </button>
           <button className="mr-2">
-            <img src="src/assets/color2.jpg" alt="" className="w-12 h-12" />
+            <img src="/assets/color2.jpg" alt="" className="w-12 h-12" />
           </button>
           <button className="mr-2">
-            <img src="src/assets/color3.jpg" alt="" className="w-12 h-12" />
+            <img src="/assets/color3.jpg" alt="" className="w-12 h-12" />
           </button>
         </div>
         {/* size-section */}
@@ -263,14 +263,23 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
           <p>tax included</p>
           <p>quantity</p>
           {/* counter-button */}
-          <button>
+          {/* <button>
             {" "}
             <button>+</button> {} <button>-</button>{" "}
-          </button>
+          </button> */}
           <div>
-            <button>add to cart</button>
-            <button>buy it now </button>
-          </div>
+            {/* <div className="">
+              <button className="bg-black text-black h-[51px] mb- w-30 border-gray-300 px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:opacity-5 hover:text-white">
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span className="relative z-10 ">Add to Cart </span>
+            </button>
+          </div> */}
+          {/* <div className="">
+              <button className="bg-white text-black h-[51px] mb- w-30 border-gray-300 px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span className="relative z-10 ">Buy it Now</span>
+            </button>
+          </div> */}
         </div>
         {/* you may also like  */}
         <div className="w-full h-fit mt-10 mb-10">
@@ -349,6 +358,7 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
           </div>
         </div> */}
       </div>
+    </div>
     </div>
   );
 }

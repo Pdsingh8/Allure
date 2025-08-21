@@ -36,20 +36,20 @@ function NewLook() {
   );
 
   const products = [
-    { name: "Casual Draw Pant & Check Blazer", price: 1061.0, image: "src/assets/shirtimg-1.jpg" },
-    { name: "Striped Shirt", price: 500.0, image: "src/assets/beltimg-1.webp" },
-    { name: "Black Pant", price: 750.0, image: "src/assets/pantimg-1.webp" },
+    { name: "Casual Draw Pant & Check Blazer", price: 1061.0, image: "/assets/shirtimg-1.jpg" },
+    { name: "Striped Shirt", price: 500.0, image: "/assets/beltimg-1.webp" },
+    { name: "Black Pant", price: 750.0, image: "/assets/pantimg-1.webp" },
   ];
 
   return (
     <div className="relative">
-      <h1 className="absolute top-20 text-7xl font-sans">NEW LOOK</h1>
-      <p className="absolute top-50">discover our new arrivals</p>
+      {/* <h1 className="absolute top-20 text-7xl font-sans">NEW LOOK</h1>
+      <p className="absolute top-50">discover our new arrivals</p> */}
 
       <div className="relative w-full h-[400px]">
         
         <img
-          src="src/assets/newlooks.jpg"
+          src="/assets/newlooks.jpg"
           alt=""
           className="object-contain w-full h-190"
         />
@@ -76,7 +76,7 @@ function NewLook() {
             <FaRegDotCircle size={30} />
           </button>
           <button
-            className="bg-white/80 p-3 rounded-full top-6/4 mr-15 absolute"
+            className="bg-white/80 p-3 rounded-full top-6/4 mr-2 absolute"
             onClick={() => {
               setSelectedProduct(products[2]);
               setShowModal(true);

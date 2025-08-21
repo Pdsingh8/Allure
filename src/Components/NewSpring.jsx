@@ -2,7 +2,7 @@ import React from "react";
 
 function NewSpring() {
   return (
-    <div className="w-full h-screen flex relative bg-[url(src/assets/springc.jpg)] bg-center justify-center bg-no-repeat bg-cover items-center">
+    <div className="w-full h-screen flex relative bg-[url(/assets/springc.jpg)] bg-center justify-center bg-no-repeat bg-cover items-center">
       
       <div className=" text-white text-center jusitfy-center">+
         <h1 className="text-5xl">New Spring Collections</h1>

@@ -10,18 +10,18 @@ function Features() {
       description:
         "Ethically sourced materials with a commitment to eco-friendly production. Designed to minimize environmental impact without compromising on quality or style.",
       cols: [
-        { img: "src/assets/ft3.jpg.svg", text: "Sustainable fabric" },
-        { img: "src/assets/ft2.jpg.svg", text: "Modern tailoring" },
-        { img: "src/assets/ft1.jpg.svg", text: "Durable stitching" },
+        { img: "/assets/ft3.jpg.svg", text: "Sustainable fabric" },
+        { img: "/assets/ft2.jpg.svg", text: "Modern tailoring" },
+        { img: "/assets/ft1.jpg.svg", text: "Durable stitching" },
       ],
     },
     tie: {
       heading: "Signature Tie",
       description: "Benefits Introducing our signature MatchlessMerino.",
       cols: [
-        { img: "src/assets/ft3.jpg.svg", text: "Premium wool" },
-        { img: "src/assets/ft2.jpg.svg", text: "Soft texture" },
-        { img: "src/assets/ft1.jpg.svg", text: "Luxury feel" },
+        { img: "/assets/ft3.jpg.svg", text: "Premium wool" },
+        { img: "/assets/ft2.jpg.svg", text: "Soft texture" },
+        { img: "/assets/ft1.jpg.svg", text: "Luxury feel" },
       ],
     },
     collar: {
@@ -29,9 +29,9 @@ function Features() {
       description:
         "Introducing our signature MatchlessMerino, made of Merino wool, thinner, softer and finer than regular wool. Luxe feeling, breathable and all-season versatility.",
       cols: [
-        { img: "src/assets/ft3.jpg.svg", text: "All-season wear"},
-        { img: "src/assets/ft2.jpg.svg", text: "Breathable design"},
-        { img: "src/assets/ft1.jpg.svg", text: "Elegant finish" },
+        { img: "/assets/ft3.jpg.svg", text: "All-season wear"},
+        { img: "/assets/ft2.jpg.svg", text: "Breathable design"},
+        { img: "/assets/ft1.jpg.svg", text: "Elegant finish" },
       ],
     },
   };
@@ -77,7 +77,7 @@ function Features() {
         {/* Right side: image with buttons */}
         <div className="flex-1 relative flex justify-center order-1 md:order-2">
           <img
-            src="src/assets/fti.jpg"
+            src="/assets/fti.jpg"
             alt="Blazer model"
             className="w-[250px] md:w-[400px] max-w-[400px] h-auto object-cover"
           />

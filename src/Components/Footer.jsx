@@ -140,12 +140,12 @@ function Footer() {
         </div>
         {/* payment-methods */}
         <div className="items-end flex justify-end space-x-2 ml-auto">
-          <button><img src="src/assets/visa.jpg" alt="" className="w-10 h-5"/></button>
-          <button><img src="src/assets/mc.jpg" alt="" className="w-10 h-5"/></button>
-          <button><img src="src/assets/amex.jpg" alt="" className="w-10 h-5" /></button>
-          <button><img src="src/assets/pp.jpg" alt="" className="w-10 h-5"/></button>
-          <button><img src="src/assets/dc.jpg" alt="" className="w-10 h-5"/></button>
-          <button><img src="src/assets/dis.jpg" alt="" className="w-10 h-5"/></button>
+          <button><img src="/assets/visa.jpg" alt="" className="w-10 h-5"/></button>
+          <button><img src="/assets/mc.jpg" alt="" className="w-10 h-5"/></button>
+          <button><img src="/assets/amex.jpg" alt="" className="w-10 h-5" /></button>
+          <button><img src="/assets/pp.jpg" alt="" className="w-10 h-5"/></button>
+          <button><img src="/assets/dc.jpg" alt="" className="w-10 h-5"/></button>
+          <button><img src="/assets/dis.jpg" alt="" className="w-10 h-5"/></button>
         </div>
         
         

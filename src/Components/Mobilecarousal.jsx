@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 const images = [
-  "src/assets/shirtimg-1.jpg",
-  "src/assets/cardimg-1.webp",
-  "src/assets/shoeimg-1.webp",
-  "src/assets/beltimg-1.webp",
-  "src/assets/pantimg-1.webp",
-  "src/assets/coatimg-1.jpg",
-  "src/assets/sneakerimg-1.jpg",
-  "src/assets/bagimg-1.jpg",
-  "src/assets/bagimg-1.jpg",
+  "/assets/shirtimg-1.jpg",
+  "/assets/cardimg-1.webp",
+  "/assets/shoeimg-1.webp",
+  "/assets/beltimg-1.webp",
+  "/assets/pantimg-1.webp",
+  "/assets/coatimg-1.jpg",
+  "/assets/sneakerimg-1.jpg",
+  "/assets/bagimg-1.jpg",
+  "/assets/bagimg-1.jpg",
 ];
 
 export default function Mobilecarousel() {

@@ -42,7 +42,7 @@ function Measure() {
           {/* first card */}
           <div className="flex md:flex-col">
             <img
-              src="src/assets/p1.jpg"
+              src="/assets/p1.jpg"
               alt=""
               className="w-86 h-65 hover:scale-110 "
             />
@@ -62,7 +62,7 @@ function Measure() {
           {/* secondcard */}
 
           <div className="flex md:flex-col">
-           <img src="src/assets/p3.jpg" alt="" className="w-85 h-120  " />
+           <img src="/assets/p3.jpg" alt="" className="w-85 h-120  " />
            <p className="text-gray-400">Posted on February 27, 2025</p>
             <h1>Be Different, Go Navy. The Modern Black Tie Attire</h1>
            <p>
@@ -74,7 +74,7 @@ function Measure() {
           {/* 3rd */}
           <div className="flex md:flex-col">
             <img
-            src="src/assets/p5.jpg"
+            src="/assets/p5.jpg"
             alt=""
             className="w-86 h-65 .hover:scale-110 "
           />
@@ -92,7 +92,7 @@ function Measure() {
 
           <div className="flex md:flex-col gap-2">
               <img
-            src="src/assets/p2.jpg"
+            src="/assets/p2.jpg"
             alt=""
             className="w-80 h-90 .hover:scale-110 "
           />
@@ -106,7 +106,7 @@ function Measure() {
           
            <div className="flex md:flex-col">
                  <img
-            src="src/assets/p4.jpg"
+            src="/assets/p4.jpg"
             alt=""
             className="w-86 h-71 .hover:scale-110 "
           />
@@ -120,7 +120,7 @@ function Measure() {
           
              <div className="flex md:flex-col ">
                   <img
-            src="src/assets/p6.jpg"
+            src="/assets/p6.jpg"
             alt=""
             className="w-86 h-71 .hover:scale-110 "
           />

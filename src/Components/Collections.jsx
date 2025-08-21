@@ -25,14 +25,14 @@ function Collections() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = {
-    new: "src/assets/newimg.jpg",
-    best: "src/assets/bestimg.jpg",
-    sale: "src/assets/saleimg.jpg",
-    suits: "src/assets/suitsimg.jpg",
-    women: "src/assets/womenimg.jpg",
-    coats: "src/assets/coatsimg.jpg",
-    jackets: "src/assets/jackets.jpg",
-    shoes: "src/assets/shoedesign.jpg",
+    new: "/assets/newimg.jpg",
+    best: "/assets/bestimg.jpg",
+    sale: "/assets/saleimg.jpg",
+    suits: "/assets/suitsimg.jpg",
+    women: "/assets/womenimg.jpg",
+    coats: "/assets/coatsimg.jpg",
+    jackets: "/assets/jackets.jpg",
+    shoes: "/assets/shoedesign.jpg",
   };
 
   useEffect(() => {

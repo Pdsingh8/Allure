@@ -1,12 +1,12 @@
 import "./Lright.css";
 import { useState } from "react";
 const images = [
-  { src: "src/assets/l1.jpg", w: "w-72", h: "h-70" },
-  { src: "src/assets/l2.jpg", w: "w-72", h: "h-50" },
-  { src: "src/assets/l3.jpg", w: "w-60", h: "h-84" },
-  { src: "src/assets/l4.jpg", w: "w-80", h: "h-48" },
-  { src: "src/assets/l5.jpg", w: "w-64", h: "h-66" },
-  { src: "src/assets/l6.jpg", w: "w-52", h: "h-40" },
+  { src: "/assets/l1.jpg", w: "w-72", h: "h-70" },
+  { src: "/assets/l2.jpg", w: "w-72", h: "h-50" },
+  { src: "/assets/l3.jpg", w: "w-60", h: "h-84" },
+  { src: "/assets/l4.jpg", w: "w-80", h: "h-48" },
+  { src: "/assets/l5.jpg", w: "w-64", h: "h-66" },
+  { src: "/assets/l6.jpg", w: "w-52", h: "h-40" },
 ];
 
 function Lright() {

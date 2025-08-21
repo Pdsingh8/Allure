@@ -7,7 +7,7 @@ function Perfect() {
         {/* card-1 */}
         <div className="justify-evenly overflow-hidden group relative">
           <img
-            src="src/assets/perfect1.jpg"
+            src="/assets/perfect1.jpg"
             alt=""
             className="w-70 md:w-[24rem] h-[50vh] md:h-[80vh] object-cover transform scale-100 group-hover:scale-[1.1] transition-transform duration-300 ease-in-out"
           />
@@ -19,16 +19,15 @@ function Perfect() {
         {/* card-2 */}
         <div className="overflow-hidden group relative">
           <img
-            src="src/assets/perfect2.jpg"
+            src="/assets/perfect2.jpg"
             alt=""
             className="w-70 md:w-[24rem] h-[50vh] md:h-[80vh] object-cover origin-bottom transform scale-100 group-hover:scale-[1.667] transition-transform duration-40 ease-in-out "
           />
           {/* quick-view-blur */}
-           {/* <div className="flex backdrop-blur-sm absolute bottom-0 text-white h-[5vh] md:hidden group-hover:block text-center">
-            <button>+</button>
-            <button>Quick view</button>
-          </div>  */}
-
+           {/* <div className="backdrop-blur-sm absolute bottom-16 left-0 w-full md:hidden p-4 flex justify-center items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <button className="px-3 py-1 bg-white text-black rounded">+</button>
+            <button className="px-3 py-1 bg-white text-black rounded">Quick view</button>
+          </div> */}
           {/* <div>
             <p className="hover:hidden text-gray-400">3 colors</p>
           </div> */}
@@ -36,20 +35,20 @@ function Perfect() {
           <div className="flex relative group md:hidden group-hover:block ">
             <button className="">
               <img
-                src="src/assets/color1.jpg"
+                src="/assets/color1.jpg"
                 alt=""
                 className="w-12 h-2 mr-2 "
               />
             </button>
             <button className="">
               <img
-                src="src/assets/color2.jpg"
+                src="/assets/color2.jpg"
                 alt=""
                 className="w-12 h-2 mr-2"
               />
             </button>
             <button className="">
-              <img src="src/assets/color3.jpg" alt="" className="w-12 h-2" />
+              <img src="/assets/color3.jpg" alt="" className="w-12 h-2" />
             </button>
           </div>
           {/* description */}
@@ -63,7 +62,7 @@ function Perfect() {
         <div>
           <div className="overflow-hidden group relative">
           <img
-            src="src/assets/perfect3.jpg"
+            src="/assets/perfect3.jpg"
             alt=""
             className="w-70 md:w-[24rem] h-[50vh] md:h-[80vh] object-cover origin-bottom transform scale-100 group-hover:scale-[1.667] transition-transform duration-40 ease-in-out "
           />
@@ -80,20 +79,20 @@ function Perfect() {
           <div className="flex relative group md:hidden group-hover:block ">
             <button className="">
               <img
-                src="src/assets/color1.jpg"
+                src="/assets/color1.jpg"
                 alt=""
                 className="w-12 h-2 mr-2 "
               />
             </button>
             <button className="">
               <img
-                src="src/assets/color2.jpg"
+                src="/assets/color2.jpg"
                 alt=""
                 className="w-12 h-2 mr-2"
               />
             </button>
             <button className="">
-              <img src="src/assets/color3.jpg" alt="" className="w-12 h-2" />
+              <img src="/assets/color3.jpg" alt="" className="w-12 h-2" />
             </button>
           </div>
           {/* description */}

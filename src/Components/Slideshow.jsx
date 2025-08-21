@@ -4,21 +4,21 @@ import "./Slideshow.css";
 function Slideshow() {
   const slides = [
     {
-      image: "/src/assets/image2.jpg",
+      image: "/assets/image2.jpg",
       heading: "step into style",
       description: "Find the perfect pair of shoes to match your suit — sleek, polished, and always on point.",
     },
     {
-      image: "/src/assets/image-4.jpg",
+      image: "/assets/image-4.jpg",
       heading: " Find an everlasting look",
       description: "Need a bespoke item?",
     },
     {
-      image: "/src/assets/image-3.jpg",
+      image: "/assets/image-3.jpg",
       heading: "Discover Your New Attire",
     },
     {
-      image: "/src/assets/image-2.jpg",
+      image: "/assets/image-2.jpg",
       heading: "Spring Collection",
       description:"discover our new jackets and trouser sets"
     },
