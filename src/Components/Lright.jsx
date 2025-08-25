@@ -19,7 +19,7 @@ function Lright() {
         </div>
         
       {/* Wrapper that pauses on hover */}
-      <div className="relative w-screen max-w-4xl mt-3 mx-auto overflow-hidden" onMouseEnter={() => setPaused(true)}
+      <div className="relative w-fit max-w-5xl mt-3 mx-auto overflow-hidden" onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}>
         {/* Track */}
         <div className= {`flex animate-carousel ${paused ? "paused" : ""}`}>
@@ -37,7 +37,7 @@ function Lright() {
             
           ))}
           <div className="flex w-full text-center">
-            <p className="text-black">@pollheim</p>
+            <p className="text-black ">@pollheim</p>
           </div>
         </div>
       </div>

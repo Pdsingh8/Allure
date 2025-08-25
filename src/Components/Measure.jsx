@@ -18,7 +18,7 @@ function Measure() {
       {/* <h1 className="">THE PASSION BLOG POST</h1> */}
       {/* first image */}
       <div
-        className="w-full md:w-160 h-[80vh] bg-[url(src/assets/measure.jpg)]"
+        className="w-full md:w-160 h-[80vh] bg-[url(/assets/measure.jpg)]"
         onWheel={handleWheel}
       >
         <div className="text-white absolute w-160 backdrop-blur-sm float-left mt-110">

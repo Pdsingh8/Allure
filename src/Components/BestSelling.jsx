@@ -74,11 +74,11 @@ function BestSelling() {
         <div className=" items-center mb-8 ">
           
 
-          <div className="text-center mb-8 flex justify-between ">
-            <h1 className="text-3xl">Best Selling Products Up to 70% Off</h1>
+          <div className="text-center mb-8 md:flex justify-between ">
+            <h2 className="text-5xl font-'Baskervville' font-">Best Selling Products Up to 70% Off</h2>
             
-            <div className="flex justify-center gap-2 mt-4">
-                <h2 className="">see all products </h2>
+            <div className="flex justify-center gap-2 mt-3">
+                <h2 className="text-3xl font-Inter">See all products </h2>
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}

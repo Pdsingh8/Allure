@@ -16,28 +16,34 @@ import NewSpring from "./Components/NewSpring.jsx";
 import Perfect from "./Components/Perfect.jsx";
 import Lright from "./Components/Lright.jsx";
 import Footer from "./Components/Footer.jsx";
+// import Testing from "./Components/Testing.jsx";
+import Safari from "./Components/Safari.jsx";
+import ProductModal from "./Components/ProductModal.jsx";
 
 function App() {
   return (
     <>
       <div className="">
-        <Nav />
-        <Navbar />
-        <Slideshow />
-        <BestSelling />
-        <NewLook />
-        <Collections />
-        <Video />
-        <SafariGl />
+        <Nav/>
+        <Navbar/>
+        <Slideshow/>
+        <BestSelling/>
+        <NewLook/>
+        <Collections/>
+        <Video/>
+        <SafariGl/>
         <Poll/>
-        <Features />
-        <Spring />
-        {/* <Measure /> */}
-        <Brown />
+        <Features/>
+        <Spring/>
+        <Measure/>
+        <Brown/>
         <NewSpring />
         <Perfect/>
         <Lright/>
         <Footer/>
+         {/* <Safari/> */}
+        {/* <Footer/> */}
+        <ProductModal/>
       </div>
     </>
   );

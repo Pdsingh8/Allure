@@ -8,7 +8,7 @@ function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const isTop = lastScrollY < 50; // at top of page
+  const isTop = lastScrollY < 50;
   const navBg = isTop ? "bg-transparent" : "bg-white shadow-lg";
   const navText = isTop ? "text-white" : "text-black";
 
@@ -25,10 +25,10 @@ function Navbar() {
   return (
     <nav
       className={`
-        fixed top-0 left-0 z-50 w-full h-30 px-1 py-4
-        flex justify-between items-center
+        fixed top-0 left-0 z-50 w-full h-20 px-1 py-4
+        flex justify-between items-center mt-1
         transition-all duration-300 ease-in-out
-        ${isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
+        ${isVisible ? "translate-y-0 opacity-100  " : "-translate-y-full opacity-0 "}
         ${navBg} ${navText}
         lg:px-6 md:px-4 sm:px-3
       `}
@@ -41,14 +41,14 @@ function Navbar() {
         />
         <ul className={`hidden lg:flex ml-8 space-x-6 ${navText}`}>
           <Button className={`${navText}`}><li className="cursor-pointer hover:scale-105 transition">About Us</li></Button>
-          <Button className={`${navText}`} ><li className="cursor-pointer hover:scale-105 transition">Blog</li></Button>
+          <Button className={`${navText}`}><li className="cursor-pointer hover:scale-105 transition">Blog</li></Button>
           <Button className={`${navText}`}><li className="cursor-pointer hover:scale-105 transition">Contact Us</li></Button>
         </ul>
       </div>
 
      
       <h1
-        className={`text-3xl font-[Libre Caslon Text] mr-6 font-bold tracking-wider cursor-pointer hover:scale-105 transition-transform ${navText}`}
+        className={`text-3xl font-'EB Garamond' mr-6 font-normal tracking-wider cursor-pointer hover:scale-105 transition-transform ${navText}`}
       >
         ALLURE
       </h1>

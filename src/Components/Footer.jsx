@@ -3,8 +3,10 @@ import { FaInstagram } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
-import Button from "./Ui/Button";
-import { IoLocationSharp } from "react-icons/io5";
+import  Button from "./Ui/Button";
+import { GrLocation } from "react-icons/gr";
+import { MdOutlinePhone } from "react-icons/md";
+import { IoMdTime } from "react-icons/io";
 
 function Footer() {
   const [openSection, setOpenSection] = useState(null);
@@ -27,10 +29,10 @@ function Footer() {
             <input
               type="text"
               placeholder="Enter your email"
-              className="border border-gray-400 px-2 py-1 flex-1 mb-2"
+              className=" px-2 py-1 flex-1 mb-2"
             />
             <button className="relative cursor-pointer px-6 py-2 bg-black text-white text-[16px] group overflow-hidden rounded">
-              {/* text swap animation */}
+              
               <div className="relative h-6 flex justify-center overflow-hidden">
                 <p className="absolute inset-0 flex justify-center items-center transition-transform duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:-translate-y-full">
                   Subscribe
@@ -46,9 +48,9 @@ function Footer() {
           </div>
         </div>
 
-        {/* Support */}
-        <div>
-          {/* Mobile button */}
+        
+        <div className="font-Inter">
+          
           <button
             onClick={() => toggleSection("support")}
             className="md:hidden flex  w-full text-left font-semibold text-lg py-2 border-b"
@@ -62,10 +64,10 @@ function Footer() {
               openSection === "support" ? "max-h-96" : "max-h-0 md:max-h-none"
             }`}
           >
-            <h1 className="hidden md:block font-semibold text-lg mb-2">
+            <h1 className="hidden md:block font-Inter font-semibold text-lg mb-2">
               Support
             </h1>
-            <ul className="flex flex-col space-y-1">
+            <ul className="flex flex-col space-y-1 font-Inter">
               <li>
                 <Button>FAQ</Button>
               </li>
@@ -86,7 +88,7 @@ function Footer() {
         </div>
 
         {/* Collections */}
-        <div>
+        <div className="font-Inter">
           <button
             onClick={() => toggleSection("collections")}
             className="md:hidden w-full text-left font-semibold text-lg py-2 border-b"
@@ -127,35 +129,51 @@ function Footer() {
         {/* Contact */}
         <div>
           <h1 className="font-semibold text-lg mb-2">Contact</h1>
-          <p className="flex">
-            <span className="text-gray-400">
-              <IoLocationSharp />
+          <p className="flex text-center items-center space-x-4">
+            <span className="text-gray-500 justify-between">
+              <GrLocation size={18}/>
             </span>
             support@store.com
           </p>
-          <p>+12345678910</p>
-          <p>Monday - Friday, 9 am - 9 pm</p>
+          <p className="flex text-center items-center space-x-4 mt-2"> 
+            <span className="text-gray-500 justify-between">
+             <MdOutlinePhone />
+            </span>
+            
+            +12345678910</p>
+          <p className="flex text-center items-center space-x-4 mt-2">
+            <span className="text-gray-600 justify-between">
+              <IoMdTime />
+            </span>
+            Monday - Friday, 9 am - 9 pm</p>
           <div className="flex space-x-3 mt-3">
-            <button>
-              <RiFacebookFill />
+             <button className="text-center text-black h-[48px] flex justify-center items-center  mb- w-10 border-black border px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span className="relative z-10 "><RiFacebookFill size={20} /></span>
             </button>
-            <button>
-              <FaInstagram />
+            {/* <button>
+              
+            </button> */}
+           <button className="text-center text-black h-[48px] flex justify-center items-center  mb- w-10 border-black border px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span className="relative z-10 "><FaInstagram size={20} /></span>
             </button>
-            <button>
-              <FaXTwitter />
+            <button className="text-center text-black h-[48px] flex justify-center items-center  mb- w-10 border-black border px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
+              <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              <span className="relative z-10 "><FaXTwitter size={20} /></span>
             </button>
           </div>
         </div>
       </div>
       {/* payments */}
-      <div className="w-full flex  mt-6">
-        <div className="">
+      <div className="w-full flex justify-around mt-6">
+        <div className="flex">
           <Button>English</Button>
+          <img src="/assets/flag1.jpg" alt="" className="w-8 h-7 ml-3  rounded-full bg-transparent" />
           <Button>US|$</Button>
         </div>
         {/* payment-methods */}
-        <div className="items-end flex justify-end space-x-2 ml-auto">
+        <div className="items-end flex justify-end space-x-2 ml-auto ">
           <button>
             <img src="/assets/visa.jpg" alt="" className="w-10 h-5" />
           </button>

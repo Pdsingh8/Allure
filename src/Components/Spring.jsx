@@ -1,5 +1,6 @@
 import "./Spring.css"
 import { MdOutlineHorizontalRule } from "react-icons/md";
+import { GoHorizontalRule } from "react-icons/go";
 
 function Spring() {
   return (

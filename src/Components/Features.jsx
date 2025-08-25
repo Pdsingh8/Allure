@@ -1,9 +1,9 @@
 import { useState } from "react";
+import PulseButton from "./PulseButton.jsx";
 
 function Features() {
   const [selected, setSelected] = useState("collar");
 
-  
   const features = {
     blazer: {
       heading: "Eco-Friendly Blazer",
@@ -29,8 +29,8 @@ function Features() {
       description:
         "Introducing our signature MatchlessMerino, made of Merino wool, thinner, softer and finer than regular wool. Luxe feeling, breathable and all-season versatility.",
       cols: [
-        { img: "/assets/ft3.jpg.svg", text: "All-season wear"},
-        { img: "/assets/ft2.jpg.svg", text: "Breathable design"},
+        { img: "/assets/ft3.jpg.svg", text: "All-season wear" },
+        { img: "/assets/ft2.jpg.svg", text: "Breathable design" },
         { img: "/assets/ft1.jpg.svg", text: "Elegant finish" },
       ],
     },
@@ -52,10 +52,7 @@ function Features() {
                 </p>
                 <div className="grid grid-cols-1  gap-1">
                   {features[selected].cols.map((col, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center p-2  "
-                    >
+                    <div key={i} className="flex items-center p-2  ">
                       <img
                         src={col.img}
                         alt={col.text}
@@ -75,26 +72,26 @@ function Features() {
         </div>
 
         {/* Right side: image with buttons */}
-        <div className="flex-1 relative flex justify-center order-1 md:order-2">
+        <div className="flex-1 relative flex justify-center overflow-hidden order-1 md:order-2 h-[400px] md:h-[600px]">
           <img
             src="/assets/fti.jpg"
             alt="Blazer model"
-            className="w-[250px] md:w-[400px] max-w-[400px] h-auto object-cover"
+            className="absolute object-cover h-[120%] md:h-[160%] w-auto md:w-[500px]"
           />
 
-          <button
+          <PulseButton
             onClick={() => setSelected("blazer")}
-            className="absolute top-[40%] left-[35%] w-4 h-4 md:w-6 md:h-6 bg-red-500 rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[65%] left-[35%] w-4 h-4 md:w-10 md:h-10 bg-red-500 rounded-full shadow-lg hover:scale-110 transition"
           />
 
-          <button
+          <PulseButton
             onClick={() => setSelected("tie")}
-            className="absolute top-[50%] left-[43%] w-4 h-4 md:w-6 md:h-6 bg-white rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[80%] left-[43%] w-4 h-4 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
           />
 
-          <button
+          <PulseButton
             onClick={() => setSelected("collar")}
-            className="absolute top-[30%] left-[48%] w-4 h-4 md:w-6 md:h-6 bg-white rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[50%] left-[52%] w-4 h-4 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
           />
         </div>
       </div>

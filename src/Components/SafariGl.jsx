@@ -63,7 +63,7 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
       title: "Formal Tie Set",
       store: "My Store",
       price: "$59.00",
-      image: "/assets/tieimg-1.jpg",
+      image: "/assets/coatimg-1.jpg",
     },
     {
       id: 8,
@@ -81,8 +81,6 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     },
   ];
 
-  
-
   // Update window width on resize
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -91,9 +89,9 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   }, []);
 
   const getVisibleCount = () => {
-    if (windowWidth < 640) return 1; // Mobile: 1 card
-    if (windowWidth < 1024) return 2; // Tablet: 2 cards
-    return 3; // Desktop: 3 cards
+    if (windowWidth < 640) return 1; 
+    if (windowWidth < 1024) return 2; 
+    return 3; 
   };
 
   const getMaxIndex = () => products.length - getVisibleCount();

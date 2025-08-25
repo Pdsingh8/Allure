@@ -38,23 +38,26 @@ function Slideshow() {
   };
 
   return (
-    <div className="relative w-full  mx-auto h-186 overflow-hidden ">
+    <div className="relative w-full  mx-auto h-186 overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
           className={` w-full md:w-full  absolute inset-0 transition-opacity duration-1000 ${
             index === currentSlide ? "opacity-100" : "opacity-0 "
           }`}
+          
         >
           <img
             src={slide.image}
             alt={slide.heading}
+            
             className="w-full h-full object-cover ease-in-out transform transition-transform duration-[4000ms] scale-x-110"
           />
           <div className="absolute flex flex-col w- h-auto inset-0 items-start space-y-6 justify-end p-8  lg:flex ">
             <div className="= ">
-               <h2 className="text-white text-6xl font-bold text-center   ">
+               <h2 className="text-white text-6xl font-bold text-center" >
               {slide.heading}
+              
             </h2>
             </div>
             
@@ -63,7 +66,7 @@ function Slideshow() {
               {slide.description}
             </p>
             </div>
-            <div className="">
+            <div className="" >
               <button className="bg-white text-black h-[51px] mb- w-30 border-gray-300 px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
               <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
               <span className="relative z-10 ">Shop All </span>
@@ -81,6 +84,7 @@ function Slideshow() {
             className={`h-0.5 w-14  transition-all ${
               index === currentSlide ? "bg-white" : "bg-gray-400"
             }`}
+            
           ></button>
         ))}
       </div>
