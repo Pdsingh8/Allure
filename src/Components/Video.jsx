@@ -14,7 +14,7 @@ function Video() {
           src="/assets/videoimg.jpg"
           alt=""
           className="w-full h-180 object-cover blur-sm"/>
-          <div className="absolute top-0 inset-x-0 bg-black/50 py-2 overflow-hidden">
+          {/* <div className="absolute top-0 inset-x-0 bg-black/50 py-2 overflow-hidden">
           <p
             className="text-marquee text-white italic"
             style={{
@@ -24,7 +24,7 @@ function Video() {
           >
             <span className="font-semibold">Get free</span> shipping on purchases over $100
           </p>
-        </div>
+        </div> */}
         {showVideo ? (
           <div
             className="absolute flex inset-0 items-center justify-center object-cover cursor-pointer"
