@@ -57,7 +57,7 @@ function Collections() {
   ];
 
   return (
-    <div className="justify-center items-center mx-auto p-4 h-[240]">
+    <div className="justify-center items-center mx-auto p-4 h-[800px]">
       <div className="flex justify-center mt-20 h-[96vh] relative">
         {/* Background Image */}
         <img
