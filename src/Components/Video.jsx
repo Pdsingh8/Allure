@@ -1,30 +1,35 @@
 import { useState } from "react";
+import { GoHorizontalRule } from "react-icons/go";
 function Video() {
   const [showVideo, setShowVideo] = useState(false);
-  
 
-    const handlePlay = () => {
-      setShowVideo(true);
-    };
-  
+  const handlePlay = () => {
+    setShowVideo(true);
+  };
+
   return (
     <section className="h-full mt-50">
       <div className="relative">
         <img
           src="/assets/videoimg.jpg"
           alt=""
-          className="w-full h-180 object-cover blur-sm"/>
-          {/* <div className="absolute top-0 inset-x-0 bg-black/50 py-2 overflow-hidden">
+          className="w-full h-180 object-cover blur-sm"
+        />
+        {/* <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <p
-            className="text-marquee text-white italic"
+            className="text-marquee text-white italic text-center z-10 leading-loose"
             style={{
               fontFamily: "'Libre Caslon Text', serif",
-              fontSize: "1.25rem",
+              fontSize: "1.95rem",
             }}
           >
-            <span className="font-semibold">Get free</span> shipping on purchases over $100
+            <span className="">Get free</span> shipping on purchases over $100-
+            <span className="">-Get free</span> shipping on purchases over $100-
+            <span className="">-Get free</span> shipping on purchases over $100-
+            <span className="">-Get free</span> shipping on purchases over $100-
           </p>
         </div> */}
+
         {showVideo ? (
           <div
             className="absolute flex inset-0 items-center justify-center object-cover cursor-pointer"
@@ -47,7 +52,6 @@ function Video() {
           </div>
         )}
       </div>
-      
     </section>
   );
 }

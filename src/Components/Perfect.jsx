@@ -23,6 +23,10 @@ function Perfect() {
             alt=""
             className="w-70 md:w-[24rem] h-[50vh] md:h-[80vh] object-cover origin-bottom transform scale-100 group-hover:scale-[1.667] transition-transform duration-40 ease-in-out "
           />
+          <div className=" backdrop-blur-sm absolute bottom-20 text-white md:hidden flex justify-center items-center group-hover:opacity-100">
+            <button className="">+</button>
+            <button>Quick view </button>
+          </div>
           {/* quick-view-blur */}
            {/* <div className="backdrop-blur-sm absolute bottom-16 left-0 w-full md:hidden p-4 flex justify-center items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button className="px-3 py-1 bg-white text-black rounded">+</button>

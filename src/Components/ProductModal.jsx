@@ -18,7 +18,7 @@ export default function ProductModal() {
         >
           <IoMdClose />
         </button>
-
+        
         {/* Product image */}
         <img
           src="/assets/b4.jpg"
@@ -28,7 +28,7 @@ export default function ProductModal() {
 
         {/* Product details */}
         <div className="ml-3 flex-1">
-          <h3 className="font-semibold pb-10">
+          <h3 className="font-light pb-10">
             Classic Double-Breasted Soft Beige Suit
           </h3>
           <span className="text-sm text-gray-800 block mt-2">

@@ -6,7 +6,7 @@ function Features() {
 
   const features = {
     blazer: {
-      heading: "Eco-Friendly Blazer",
+      heading:"Eco-Friendly Blazer",
       description:
         "Ethically sourced materials with a commitment to eco-friendly production. Designed to minimize environmental impact without compromising on quality or style.",
       cols: [
@@ -29,15 +29,15 @@ function Features() {
       description:
         "Introducing our signature MatchlessMerino, made of Merino wool, thinner, softer and finer than regular wool. Luxe feeling, breathable and all-season versatility.",
       cols: [
-        { img: "/assets/ft3.jpg.svg", text: "All-season wear" },
-        { img: "/assets/ft2.jpg.svg", text: "Breathable design" },
-        { img: "/assets/ft1.jpg.svg", text: "Elegant finish" },
+        { img:"/assets/ft3.jpg.svg", text: "All-season wear"},
+        { img:"/assets/ft2.jpg.svg", text: "Breathable design"},
+        { img:"/assets/ft1.jpg.svg", text: "Elegant finish" },
       ],
     },
   };
 
   return (
-    <div className="w-fullmin-h-screen flex items-center justify-evenly bg-gray-100 p-6">
+    <div className="w-full min-h-screen flex items-center justify-evenly bg-gray-100 p-6">
       <div className="flex flex-col md:flex-row w-full max-w-6xl">
         {/* Left side: description */}
         <div className="flex-col md:flex-row order-2 md:order-1  items-center  p-6">
@@ -63,7 +63,7 @@ function Features() {
                   ))}
                 </div>
               </>
-            ) : (
+            ) : ( 
               <p className="text-gray-500">
                 Click on a hotspot to see details.
               </p>

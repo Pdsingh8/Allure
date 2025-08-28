@@ -17,7 +17,7 @@ function BestSelling() {
     },
     {
       id: 2,
-      title: "casual blazer & casual draw pant",
+      title: "Casual blazer & casual draw pant",
       store: " My Store",
       price: "from $450.99",
       image1: "/assets/cardimg-1.webp",
@@ -25,7 +25,7 @@ function BestSelling() {
     },
     {
       id: 3,
-      title: "leather classic men's shoes",
+      title: "Leather classic men's shoes",
       store: "my store",
       price: "$149.99",
       image1: "/assets/shoeimg-1.webp",
@@ -33,7 +33,7 @@ function BestSelling() {
     },
     {
       id: 4,
-      title: "women's belt-lace in black",
+      title: "Women's belt-lace in black",
       store: "my store",
       price: "$199.99",
       image1: "/assets/beltimg-1.webp",
@@ -41,7 +41,7 @@ function BestSelling() {
     },
     {
       id: 5,
-      title: "casual draw pant & casual blazer",
+      title: "Casual draw pant & casual blazer",
       store: "my store",
       price: "$79.99",
       image1: "/assets/pantimg-1.webp",
@@ -139,7 +139,7 @@ function BestSelling() {
 
                     {/* Product Info */}
                     <div className="p-4">
-                      <h3 className="font-semibold text-lg text-gray-900 mb-1 line-clamp-2">
+                      <h3 className="font-'Inter' text-lg text-gray-900 mb-1 line-clamp-2">
                         {product.title}
                       </h3>
                       <p className="text-sm text-gray-500 mb-2">

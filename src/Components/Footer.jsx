@@ -20,7 +20,7 @@ function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Newsletter */}
         <div>
-          <h1 className="font-semibold text-lg mb-2">Newsletter</h1>
+          <h1 className="font-normal text-2xl mb-2 font-'EB Garamond'">Newsletter</h1>
           <p className="text-sm mb-3">
             Subscribe to our newsletter for exclusive updates, style tips, and
             special offers - straight to your inbox.
@@ -67,7 +67,7 @@ function Footer() {
             <h1 className="hidden md:block font-Inter font-semibold text-lg mb-2">
               Support
             </h1>
-            <ul className="flex flex-col space-y-1 font-Inter">
+            <ul className="flex flex-col space-y-1 font-'Inter'">
               <li>
                 <Button>FAQ</Button>
               </li>
@@ -91,7 +91,7 @@ function Footer() {
         <div className="font-Inter">
           <button
             onClick={() => toggleSection("collections")}
-            className="md:hidden w-full text-left font-semibold text-lg py-2 border-b"
+            className="md:hidden w-full text-left  text-lg py-2 border-b"
           >
             Collections <FaChevronDown />
           </button>
@@ -106,7 +106,7 @@ function Footer() {
             <h1 className="hidden md:block font-semibold text-lg mb-2">
               Collections
             </h1>
-            <ul className="flex flex-col space-y-1">
+            <ul className="flex flex-col space-y-1 font-'Inter'">
               <li>
                 <Button>All Collections</Button>
               </li>
