@@ -19,7 +19,7 @@ function Collections() {
     suits: "SUITS",
     women: "WOMEN",
     coats: "COATS",
-    jackets:"JACKETS",
+    jackets: "JACKETS",
     shoes: "SHOES",
   };
 
@@ -63,12 +63,12 @@ function Collections() {
         <img
           src={images[categories[currentIndex]]}
           alt={categories[currentIndex]}
-          className="w-full max-w-md h-[96vh] object-cover mt-70 transition-opacity"
+          className="w-full max-w-md h-[96vh] object-cover transition-opacity"
         />
 
         {/* Overlay Text Carousel */}
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden mt-120">
-          <div className="flex items-center gap-60 transition-transform duration-700 ease-in-out">
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden ">
+          <div className="flex  items-center gap-60 transition-transform duration-700 ease-in-out">
             {visibleItems.map(({ pos, cat }) => {
               const isCenter = pos === 0;
               return (
@@ -76,12 +76,12 @@ function Collections() {
                   key={cat + pos}
                   className={`transition-all duration-700 ${
                     isCenter
-                      ? "text-white text-5xl scale-110"
-                      : "text-black text-5xl opacity-70"
+                      ? "text-white text-5xl font-extralight scale-110"
+                      : "text-black text-4xl font-extralight opacity-70"
                   }`}
                 >
                   <h2
-                    className=""
+                    className="font-bold"
                     style={{
                       textShadow: isCenter
                         ? "2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)"
@@ -98,7 +98,7 @@ function Collections() {
       </div>
 
       {/* Button */}
-      <div className="flex justify-center items-center mt-80">
+      <div className="flex justify-center items-center mt-7">
         <button className="bg-white text-black border w-60 h-14 border-gray-300 px-6 py-2 relative overflow-hidden group transition-colors duration-300 hover:text-white">
           <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
           <span className="relative z-10">View Collections</span>
