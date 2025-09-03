@@ -3,7 +3,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Button from "./Ui/Button";
 
 const images = [
-  "/assets/shirtimg-1.jpg",
+  "/assets/safarimain.jpg",
   "/assets/cardimg-1.webp",
   "/assets/shoeimg-1.webp",
   "/assets/beltimg-1.webp",
@@ -57,7 +57,7 @@ export default function Mobilecarousel() {
   return (
     <div className="block md:hidden w-full max-w-5xl mx-auto">
       {/* Image container */}
-      <div className="w-full h-104 overflow-hidden   ">
+      <div className="w-full h-104 overflow-hidden">
         <img
           src={images[activeSlide]}
           alt={`Slide ${activeSlide}`}
@@ -78,7 +78,7 @@ export default function Mobilecarousel() {
         ))}
       </div>
       {/* Third div - Description */}
-      <div className="w-full bg-gray-50 relative overflow-hidden">
+      <div className="w-full bg-gray-50 relative overflow-hidden ">
         <div className="p-8">
           <div className="flex flex-col justify-center ">
             <p className="text-gray-600 ">couturist tailors</p>
@@ -119,13 +119,15 @@ export default function Mobilecarousel() {
           <div className="space-y-6 text-gray-600">
             <div className="w-full">
               <p>Garment:</p>
-
-              <button className="border-1 text-[22px] text-center text-black border-black w-18 h-15">
+               <div className="flex">
+                <button className="border-1 text-[22px] text-center text-black border-gray-400 mt-2 mr-1 w-12 h-15">
                 suit
               </button>
-              <button className="w-60 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-60 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black mt-2 ">
                 suit + extra pair of trousers
               </button>
+               </div>
+              
               <p>
                 Color: <span className="text-black mb-4">Dark Beige</span>
               </p>
@@ -143,32 +145,33 @@ export default function Mobilecarousel() {
                 <img src="/assets/color3.jpg" alt="" className="w-12 h-12" />
               </button>
             </div>
-            <div>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+            <div className="">
+                <p className="text-gray-600 font-'Inter">Size :</p>
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ">
                 44
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
                 46
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
                 48
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
                 50
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
                 52
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black mt-1 ">
                 54
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black mt-1 ml-2">
                 56
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black mt-1 ml-2">
                 58
               </button>
-              <button className="w-20 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black ml-2">
+              <button className="w-12 border-1 text-[18px] border-gray-400 hover:border-black hover:border-1 h-15 text-bold hover:text-black mt-1 ml-2">
                 60
               </button>
             </div>
@@ -212,7 +215,7 @@ export default function Mobilecarousel() {
             {/* Product Slider */}
             <div className="w-full h-fit mt-10 mb-10">
               <div className="flex items-center justify-between mb-4">
-                <h1 className="text-2xl text-black font-'Baskervville' ml-10">
+                <h1 className="text-2xl text-black font-'Baskervville' m">
                   You May Also Like
                 </h1>
                 <div className="flex gap-2">
@@ -230,7 +233,7 @@ export default function Mobilecarousel() {
                   <button
                     onClick={nextSlide}
                     disabled={currentIndex === products.length - 1}
-                    className={`p-2 border-2 mr-4 rounded ${
+                    className={`p-2 border-2 rounded ${
                       currentIndex === products.length - 1
                         ? "border-gray-200 text-gray-300 cursor-not-allowed"
                         : "border-gray-400 hover:border-gray-600 hover:text-gray-800"
@@ -242,11 +245,11 @@ export default function Mobilecarousel() {
               </div>
 
               <div className="flex justify-center ">
-                <div className="flex gap-4 bg-white shadow-md  w-110 max-w-lg p-4">
+                <div className="flex gap-4 shadow-md w-120 max-w-lg p-4">
                   <img
                     src={products[currentIndex].image}
                     alt={products[currentIndex].title}
-                    className="w-28 h-34 object-cover rounded"
+                    className="w-28 h-34 object-cover "
                   />
                   <div className="flex flex-col justify-between">
                     <div>

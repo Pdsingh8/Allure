@@ -39,7 +39,7 @@ function NewLook() {
       image: "/assets/shirtimg-1.jpg",
     },
     { 
-      name: "Women's Belt",
+      name: "Women's",
       price: 500.0, 
       image: "/assets/beltimg-1.webp"
      },

@@ -37,20 +37,20 @@ function Features() {
   };
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-evenly bg-gray-100 p-6">
+    <div className="w-full h-full md:min-h-screen flex items-center justify-evenly mb-90 md:mb-1 bg-gray-100 p-6">
       <div className="flex flex-col md:flex-row w-full max-w-6xl">
         {/* Left side: description */}
-        <div className="flex-col md:flex-row order-2 md:order-1  items-center  p-6">
-          <div className="bg-white shadow-md p-6 w-full md:w-90 md  min-h-[500px]">
+        <div className="flex-col z-10 absolute md:relative mt-89 md:mt-10 md:flex-row order-2 md:order-1 items-center md:p-6">
+          <div className="bg-white shadow-md p-6 w-full md:w-90 h-120 md:min-h-[500px]">
             {selected ? (
               <>
-                <h2 className="text-3xl text-black font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl text-black font-bold md:mb-4">
                   {features[selected].heading}
                 </h2>
-                <p className="text-black-400 mb-6">
+                <p className="text-black-400 md:mb-6">
                   {features[selected].description}
                 </p>
-                <div className="grid grid-cols-1  gap-1">
+                <div className="grid grid-cols-1 gap-1">
                   {features[selected].cols.map((col, i) => (
                     <div key={i} className="flex items-center p-2  ">
                       <img
@@ -72,26 +72,27 @@ function Features() {
         </div>
 
         {/* Right side: image with buttons */}
-        <div className="flex-1 relative flex justify-center overflow-hidden order-1 md:order-2 h-[400px] md:h-[600px]">
+        <div className="flex-1 relative flex justify-center overflow-hidden order-1 md:order-2 h-[300px] md:h-[600px]">
           <img
             src="/assets/fti.jpg"
             alt="Blazer model"
-            className="absolute object-cover h-[120%] md:h-[160%] w-auto md:w-[500px]"
+            className="relative object-cover h-[100%] md:h-[160%] w-100 md:w-[500px]"
+            
           />
 
           <PulseButton
             onClick={() => setSelected("blazer")}
-            className="absolute top-[65%] left-[35%] w-4 h-4 md:w-10 md:h-10 bg-red-500 rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[45%] md:top-[65%] left-[30%] md:left-[35%] w-6 h-6 md:w-10 md:h-10 bg-red-500 rounded-full shadow-lg hover:scale-110 transition"
           />
 
           <PulseButton
             onClick={() => setSelected("tie")}
-            className="absolute top-[80%] left-[43%] w-4 h-4 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[55%] md:top-[80%] left-[40%] md:left-[43%] w-6 h-6 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
           />
 
           <PulseButton
             onClick={() => setSelected("collar")}
-            className="absolute top-[50%] left-[52%] w-4 h-4 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
+            className="absolute top-[30%] md:top-[45%] left-[50%] md:left-[50%] w-6 h-6 md:w-10 md:h-10 bg-white rounded-full shadow-lg hover:scale-110 transition"
           />
         </div>
       </div>

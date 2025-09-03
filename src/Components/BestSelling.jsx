@@ -71,14 +71,24 @@ function BestSelling() {
   return (
     <>
       <div className="max-w-8xl mx-auto px-4 h-230 py-12">
-        <div className=" items-center mb-8 ">
-          
-
+        <div className=" md:ml-15 items-center mb-8 ">
           <div className="text-center mb-8 md:flex justify-between ">
-            <h2 className="text-5xl font-'Baskervville' font-">Best Selling Products Up to 70% Off</h2>
-            
+            {/* <h4 style={{ fontFamily: "'EB Garamond', serif" }} className="text-5xl font-extralight">
+                Best Selling Products 
+                <span style={{ fontFamily: "'Libre Caslon Text'"  }} className="italic">Up to 70% Off</span>
+              </h4> */}
+
+            <h4 className="text-5xl font-'EB Garamond'  font-extralight ">
+              Best Selling Products{" "}
+              <span className="font-'Libre Caslon Text' italic">
+                Up to 70% Off
+              </span>
+            </h4>
+
             <div className="flex justify-center gap-2 mt-3">
-                <h2 className="text-3xl font-Inter">See all products </h2>
+              <h2 className="text-2xl font-light font-'Inter'">
+                See all products{" "}
+              </h2>
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
@@ -119,7 +129,7 @@ function BestSelling() {
                   key={product.id}
                   className="w-full md:w-1/3 flex-shrink-0 px-1 "
                 >
-                  <div className="bg-white  shadow-md  transition-shadow duration-300 overflow-hidden group ">
+                  <div className="bg-white shadow-md transition-shadow duration-300 overflow-hidden group ">
                     {/* Product Image */}
                     <div
                       className="relative h-124 overflow-hidden cursor-pointer "
@@ -139,14 +149,14 @@ function BestSelling() {
 
                     {/* Product Info */}
                     <div className="p-4">
-                      <h3 className="font-'Inter' text-lg text-gray-900 mb-1 line-clamp-2">
+                      <h3 className="font-inter text-lg text-gray-900 mb-1 line-clamp-2">
                         {product.title}
                       </h3>
                       <p className="text-sm text-gray-500 mb-2">
                         by {product.store}
                       </p>
                       <div className="flex justify-between items-center">
-                        <span className="text-xl  ">{product.price}</span>
+                        <span className="text-xl">{product.price}</span>
                       </div>
                     </div>
                   </div>

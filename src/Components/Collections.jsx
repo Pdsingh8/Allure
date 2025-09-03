@@ -57,35 +57,35 @@ function Collections() {
   ];
 
   return (
-    <div className="justify-center items-center mx-auto p-4 h-[800px]">
-      <div className="flex justify-center mt-20 h-[96vh] relative">
+    <div className="justify-center items-center mx-auto p-4 md:h-[750px]">
+      <div className="flex justify-center mt-10 md:h-[96vh] relative">
         {/* Background Image */}
         <img
           src={images[categories[currentIndex]]}
           alt={categories[currentIndex]}
-          className="w-full max-w-md h-[96vh] object-cover transition-opacity"
+          className=" w-[80%] md:w-full max-w-md h-[60vh] md:h-[96vh] object-cover transition-opacity"
         />
 
         {/* Overlay Text Carousel */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden ">
-          <div className="flex  items-center gap-60 transition-transform duration-700 ease-in-out">
+          <div className="flex  items-center gap-60 transition-transform duration-1000 ease-in-out">
             {visibleItems.map(({ pos, cat }) => {
               const isCenter = pos === 0;
               return (
                 <div
                   key={cat + pos}
-                  className={`transition-all duration-700 ${
+                  className={`transition-all duration-1000 ${
                     isCenter
-                      ? "text-white text-5xl font-extralight scale-110"
-                      : "text-black text-4xl font-extralight opacity-70"
+                      ? "text-white text-3xl md:text-5xl font-extralight md:scale-110"
+                      : "text-black text-xl md:text-4xl font-extralight opacity-70"
                   }`}
                 >
                   <h2
-                    className="font-bold"
+                    className="font-extralight"
                     style={{
                       textShadow: isCenter
-                        ? "2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.7)"
-                        : "1px 1px 3px rgba(0,0,0,0.5)",
+                        ? ""
+                        : "",
                     }}
                   >
                     {overlayText[cat]}

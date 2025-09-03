@@ -1,10 +1,10 @@
 import "./Lright.css";
 import { useState } from "react";
 const images = [
-  { src: "/assets/l1.jpg", w: "w-72", h: "h-70" },
-  { src: "/assets/l2.jpg", w: "w-72", h: "h-50" },
-  { src: "/assets/l3.jpg", w: "w-60", h: "h-84" },
-  { src: "/assets/l4.jpg", w: "w-80", h: "h-48" },
+  { src: "/assets/l1.jpg", w: "w-40 md:w-72", h: "h-40 md:h-70" },
+  { src: "/assets/l2.jpg", w: "w-40 md:w-72", h: "h-50" },
+  { src: "/assets/l3.jpg", w: "w-40 md:w-60", h: "h-40 md:h-84" },
+  { src: "/assets/l4.jpg", w: "w-40 md:w-80", h: "h-58 md:h-48" },
   { src: "/assets/l5.jpg", w: "w-64", h: "h-66" },
   { src: "/assets/l6.jpg", w: "w-52", h: "h-40" },
 ];
@@ -13,7 +13,7 @@ function Lright() {
     const [paused, setPaused] = useState(false);
 
   return (
-    <div className="w-full h-fit overflow-hidden bg-gray-100 py-6"  >
+    <div className="w-full h-80 md:h-fit overflow-hidden bg-gray-100 py-6"  >
         <div className="w-full flex justify-center items-center mb-6">
            <h1 className="text-6xl">POLLHEIM </h1>
         </div>
@@ -26,12 +26,12 @@ function Lright() {
           {images.map((img, idx) => (
             <div
               key={idx}
-              className={`flex-shrink-0 ${img.w} ${img.h} mx-2 shadow-lg overflow-hidden group`}
+              className={`flex-shrink-0 ${img.w} ${img.h} mx-6 md:mx-2 shadow-lg overflow-hidden group`}
             >
               <img
                 src={img.src}
                 alt={`card-${idx}`}
-                className="w-full h-full object-cover transform scale-100 group-hover:scale-[1.3] transition-transform duration-300 ease-in-out"
+                className="md:w-full md:h-full object-cover transform scale-100 group-hover:scale-[1.3] transition-transform duration-300 ease-in-out"
               />
             </div>
             

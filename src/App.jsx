@@ -21,6 +21,8 @@ import Footer from "./Components/Footer.jsx";
 import ProductModal from "./Components/ProductModal.jsx";
 import Tests from "./Components/Tests.jsx";
 import News from "./Components/News.jsx";
+import NewLooks from "./Components/NewLooks.jsx";
+import Stops from "./Components/Stops.jsx";
 
 function App() {
   return (
@@ -30,7 +32,8 @@ function App() {
         <Navbar />
         <Slideshow />
         <BestSelling />
-        <NewLook />
+        <NewLooks/>
+        {/* <NewLook /> */}
         <Collections />
         <Video />
         <Tests/>
@@ -46,6 +49,8 @@ function App() {
         <Footer />
         <ProductModal />
         <News/>
+        
+        
       </div>
     </>
   );

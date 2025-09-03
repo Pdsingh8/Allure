@@ -2,9 +2,9 @@ import React from "react";
 
 function NewSpring() {
   return (
-    <div className="w-full h-screen flex relative bg-[url(/assets/springc.jpg)] bg-center justify-center bg-no-repeat bg-cover items-center">
+    <div className="w-full mt-5 h-70 md:h-screen flex relative bg-[url(/assets/springc.jpg)] bg-center justify-center bg-no-repeat bg-cover items-center">
       
-      <div className=" text-white text-center jusitfy-center">+
+      <div className=" text-white text-center jusitfy-center">
         <h1 className="text-5xl">New Spring Collections</h1>
         <p className="items-center justify-center inset-0 mt-5">Ready to wear bespoke items</p>
         <div className="text-center mt-4">

@@ -29,7 +29,7 @@ function Navbar() {
         flex justify-between items-center mt-1
         transition-all duration-300 ease-in-out
         ${isVisible ? "translate-y-0 opacity-100  " : "-translate-y-full opacity-0 "}
-        ${navBg} ${navText}
+        ${navBg} ${navText} 
         lg:px-6 md:px-4 sm:px-3
       `}
     >
@@ -39,6 +39,7 @@ function Navbar() {
           size={30}
           className={`cursor-pointer hover:scale-110 transition-transform ${navText}`}
         />
+        <Button><CiSearch size={24} className={` md:hidden mt-1 hover:scale-110 transition-transform ${navText}`} /></Button>
         <ul className={`hidden lg:flex ml-8 space-x-6 ${navText}`}>
           <Button className={`${navText}`}><li className="cursor-pointer hover:scale-105 transition">About Us</li></Button>
           <Button className={`${navText}`}><li className="cursor-pointer hover:scale-105 transition">Blog</li></Button>
@@ -60,7 +61,7 @@ function Navbar() {
           <Button className={`${navText}`}><span className={navText}>US|$</span></Button>
           <Button className={`${navText}`}><CgProfile size={24} className={`hover:scale-110 transition-transform ${navText}`} /></Button>
         </div>
-        <Button><CiSearch size={24} className={`hover:scale-110 transition-transform ${navText}`} /></Button>
+        
         <Button><IoBagHandleOutline size={24} className={`hover:scale-110 transition-transform ${navText}`} /></Button>
       </div>
     </nav>

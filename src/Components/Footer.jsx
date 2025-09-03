@@ -18,7 +18,7 @@ function Footer() {
   return (
     <footer className="bg-gray-100 px-6 py-10">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Newsletter */}
+        {/*newsletter*/}
         <div>
           <h1 className="font-normal text-2xl mb-2 font-'EB Garamond'">Newsletter</h1>
           <p className="text-sm mb-3">
@@ -55,16 +55,16 @@ function Footer() {
             onClick={() => toggleSection("support")}
             className="md:hidden flex  w-full text-left font-semibold text-lg py-2 border-b"
           >
-            Support <FaChevronDown />
+            Support <span className="mt-1 ml-1"><FaChevronDown /></span>
           </button>
 
-          {/* Desktop always open, Mobile collapsible */}
+          {/*mobile collapsible */}
           <div
             className={`overflow-hidden transition-all duration-300 md:block ${
               openSection === "support" ? "max-h-96" : "max-h-0 md:max-h-none"
             }`}
           >
-            <h1 className="hidden md:block font-Inter font-semibold text-lg mb-2">
+            <h1 className="hidden md:block font-Inter md:font-semibold text-lg mb-2">
               Support
             </h1>
             <ul className="flex flex-col space-y-1 font-'Inter'">
@@ -87,13 +87,13 @@ function Footer() {
           </div>
         </div>
 
-        {/* Collections */}
+        {/* collections */}
         <div className="font-Inter">
           <button
             onClick={() => toggleSection("collections")}
-            className="md:hidden w-full text-left  text-lg py-2 border-b"
+            className="md:hidden flex w-full text-left  text-lg py-2 border-b"
           >
-            Collections <FaChevronDown />
+            Collections <span className="mt-1 ml-1"><FaChevronDown /></span>
           </button>
 
           <div
@@ -126,7 +126,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Contact */}
+        {/* contact */}
         <div>
           <h1 className="font-semibold text-lg mb-2">Contact</h1>
           <p className="flex text-center items-center space-x-4">

@@ -128,7 +128,7 @@ const Tests = () => {
           <div className="w-1/4 relative overflow-hidden">
             <div ref={imageScrollRef} className="flex flex-col">
               {images.map((item, index) => (
-                <div key={index} className="flex-shrink-0 h-110 w-100 p-2 ">
+                <div key={index} className="flex-shrink-0 h-111 w-100 p-2 ">
                   <img
                     src={item.src}
                     alt={`Image ${index + 1}`}
@@ -293,14 +293,14 @@ const Tests = () => {
                 <div className="w-full h-fit mt-10 mb-10">
                   {/* Heading and Button */}
                   <div className="flex items-center justify-between mb-4">
-                    <h1 className="text-2xl text-black font-'Baskervville' ml-10">
+                    <h1 className="text-2xl font-extralight text-black font-'Baskervville' mr-1 md:ml-1">
                       You May Also Like
                     </h1>
                     <div className="flex gap-2">
                       <button
                         onClick={prevSlide}
                         disabled={currentIndex === 0}
-                        className={`p-2 border-2 mr-4 rounded ${
+                        className={`p-2 border-2 md:mr-0 rounded ${
                           currentIndex === 0
                             ? "border-gray-200 text-gray-300 cursor-not-allowed"
                             : "border-gray-400 hover:border-gray-600 hover:text-gray-800"
@@ -323,12 +323,12 @@ const Tests = () => {
                   </div>
 
                   {/* Card */}
-                  <div className="flex justify-center ">
-                    <div className="flex gap-4 bg-white shadow-md  w-110 max-w-lg p-4">
+                  <div className="flex  ">
+                    <div className="flex gap-4 bg-white border border-gray-300 w-110 max-w-lg p-4">
                       <img
                         src={products[currentIndex].image}
                         alt={products[currentIndex].title}
-                        className="w-28 h-34 object-cover rounded"
+                        className="w-28 h-34 object-cover"
                       />
 
                       {/* Product Info */}
@@ -355,7 +355,7 @@ const Tests = () => {
             </div>
           </div>
         </div>
-        
+
       </div>
       </div>
       
